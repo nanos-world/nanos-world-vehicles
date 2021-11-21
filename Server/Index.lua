@@ -1,7 +1,7 @@
 -- Here follows a list with all Vehicles we currently have, already configured and ready to spawn, feel free to spawn your own or create your own vehicles
 NanosWorldVehicles = {
 	SUV = function(location, rotation)
-		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_SUV", 0, true, false, true, "nanos-world::A_Vehicle_Engine_14")
+		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_SUV", CollisionType.Normal, true, false, true, "nanos-world::A_Vehicle_Engine_14")
 
 		vehicle:SetEngineSetup(4500)
 		vehicle:SetSteeringWheelSetup(Vector(0, 20, 131), 26)
@@ -20,7 +20,7 @@ NanosWorldVehicles = {
 		return vehicle
 	end,
 	Hatchback = function(location, rotation)
-		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_Hatchback", 0, true, false, true, "nanos-world::A_Vehicle_Engine_01")
+		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_Hatchback", CollisionType.Normal, true, false, true, "nanos-world::A_Vehicle_Engine_01")
 
 		vehicle:SetEngineSetup(5700)
 		vehicle:SetSteeringWheelSetup(Vector(0, 27, 130), 24)
@@ -37,7 +37,7 @@ NanosWorldVehicles = {
 		return vehicle
 	end,
 	Pickup = function(location, rotation)
-		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_Pickup", 0, true, false, true, "nanos-world::A_Vehicle_Engine_10")
+		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_Pickup", CollisionType.Normal, true, false, true, "nanos-world::A_Vehicle_Engine_10")
 		vehicle:SetEngineSetup(5000)
 		vehicle:SetSteeringWheelSetup(Vector(0, 27, 120), 24)
 		vehicle:SetHeadlightsSetup(Vector(270, 0, 70))
@@ -58,7 +58,7 @@ NanosWorldVehicles = {
 		return vehicle
 	end,
 	SportsCar = function(location, rotation)
-		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_SportsCar", 0, true, false, true, "nanos-world::A_Vehicle_Engine_05")
+		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_SportsCar", CollisionType.Normal, true, false, true, "nanos-world::A_Vehicle_Engine_05")
 
 		vehicle:SetEngineSetup(7500, 0.25, 0.1)
 		vehicle:SetTransmissionSetup(true, 0.1, 1, 4, 20)
@@ -76,7 +76,7 @@ NanosWorldVehicles = {
 		return vehicle
 	end,
 	TruckBox = function(location, rotation)
-		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_Truck_Box", 0, true, false, true, "nanos-world::A_Vehicle_Engine_08")
+		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_Truck_Box", CollisionType.Normal, true, false, true, "nanos-world::A_Vehicle_Engine_08")
 
 		vehicle:SetEngineSetup(5700)
 		vehicle:SetSteeringWheelSetup(Vector(0, 41, 120), 26)
@@ -94,7 +94,7 @@ NanosWorldVehicles = {
 		return vehicle
 	end,
 	TruckChassis = function(location, rotation)
-		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_Truck_Chassis", 0, true, false, true, "nanos-world::A_Vehicle_Engine_08")
+		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_Truck_Chassis", CollisionType.Normal, true, false, true, "nanos-world::A_Vehicle_Engine_08")
 
 		vehicle:SetEngineSetup(5700)
 		vehicle:SetSteeringWheelSetup(Vector(0, 41, 120), 26)
