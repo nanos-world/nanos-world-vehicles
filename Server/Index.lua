@@ -41,15 +41,15 @@ NanosWorldVehicles = {
 	end,
 	Pickup = function(location, rotation)
 		local vehicle = Vehicle(location or Vector(), rotation or Rotator(), "nanos-world::SK_Pickup", CollisionType.Normal, true, false, true, "nanos-world::A_Vehicle_Engine_10")
-		vehicle:SetEngineSetup(700, 5000)
-		vehicle:SetAerodynamicsSetup(2500)
-		vehicle:SetSteeringWheelSetup(Vector(0, 27, 120), 24)
-		vehicle:SetHeadlightsSetup(Vector(270, 0, 70))
+        vehicle:SetEngineSetup(550, 5000)
+        vehicle:SetAerodynamicsSetup(2000, 0.4, 500, 200, 0.4)
+        vehicle:SetSteeringWheelSetup(Vector(0, 27, 120), 24)
+        vehicle:SetHeadlightsSetup(Vector(270, 0, 70))
 
-		vehicle:SetWheel(0, "Wheel_Front_Left",  27, 18, 45, Vector(), true,  true, false, false, false, 1500, 3000, 1000, 1, 3, 20, 20, 250, 50, 10, 10, 0, 0.5, 0.5)
-		vehicle:SetWheel(1, "Wheel_Front_Right", 27, 18, 45, Vector(), true,  true, false, false, false, 1500, 3000, 1000, 1, 3, 20, 20, 250, 50, 10, 10, 0, 0.5, 0.5)
-		vehicle:SetWheel(2, "Wheel_Rear_Left",   27, 18,  0, Vector(), false, true,  true, false, false, 1500, 3000, 1000, 1, 4, 20, 20, 250, 50, 10, 10, 0, 0.5, 0.5)
-		vehicle:SetWheel(3, "Wheel_Rear_Right",  27, 18,  0, Vector(), false, true,  true, false, false, 1500, 3000, 1000, 1, 4, 20, 20, 250, 50, 10, 10, 0, 0.5, 0.5)
+        vehicle:SetWheel(0, "Wheel_Front_Left",  30, 18, 45, Vector(), true, true, false, false, false, 1800, 3500, 1500, 1, 2, 20, 20, 350, 60, 6, 10, 0, 0.4, 0.6)
+        vehicle:SetWheel(1, "Wheel_Front_Right", 30, 18, 45, Vector(), true, true, false, false, false, 1800, 3500, 1500, 1, 2, 20, 20, 350, 60, 6, 10, 0, 0.4, 0.6)
+        vehicle:SetWheel(2, "Wheel_Rear_Left",   30, 18,  0, Vector(), true, true,  true, false, false, 1800, 3500, 1500, 1, 2, 20, 20, 350, 60, 6, 10, 0, 0.4, 0.6)
+        vehicle:SetWheel(3, "Wheel_Rear_Right",  30, 18,  0, Vector(), true, true,  true, false, false, 1800, 3500, 1500, 1, 2, 20, 20, 350, 60, 6, 10, 0, 0.4, 0.6)
 
 		vehicle:SetDoor(0, Vector(  50, -75, 105), Vector(   8, -32.5,  95), Rotator(0,  0,  10), 70, -150)
 		vehicle:SetDoor(1, Vector(  50,  75, 105), Vector(  25,    50,  90), Rotator(0,  0,   0), 70,  150)
