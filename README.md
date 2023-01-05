@@ -1,12 +1,14 @@
 # nanos-world-vehicles
-Default nanos.world Vehicle's Package
+
+This is a Package which contains a bunch of vehicles Classes defined using meshes already included in nanos world Default Asset Pack.
+
 
 ## Usage
-This is a built-in Library already included in nanos world, to use it, just include ``Package.RequirePackage("nanos-world-vehicles")`` on the top of your scripting.
 
 ```lua
 NanosWorldVehicles.SUV(Vector(123, 456, 100), Rotator())
 ```
+
 
 ## List of all available Vehicles in this Package
 
@@ -21,3 +23,4 @@ NanosWorldVehicles.SUV(Vector(123, 456, 100), Rotator())
 - Van
 - Wagon
 - Sedan
+- Offroad

@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Nanos Store Action
-        uses: nanos-world/nanos-store-action@e1d43a710f5dee703414a230d8447571b5d6e41c
+        uses: nanos-world/nanos-store-action@v2.0
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
@@ -19,7 +19,5 @@ jobs:
           folder: ''
           # Name of the asset/package.
           name: 'default-vehicles'
-          # Changelog of the release. Can be edited on the store before it gets published.
-          changelog: 'built through actions'
           # API token - generate at https://store.nanos.world/settings/tokens/ and set under Settings -> Secrets -> Actions with name STORE_SECRET
           token: ${{ secrets.STORE_SECRET }}
