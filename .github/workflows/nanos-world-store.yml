@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Nanos Store Action
-        uses: nanos-world/nanos-store-action@v1.6
+        uses: nanos-world/nanos-store-action@3bbac33644dd1fe8fb6d4e316af4918bb6a11f65
         with:
           # folder which contains the asset/package - if it's on root, leave it blank
           folder: ''
