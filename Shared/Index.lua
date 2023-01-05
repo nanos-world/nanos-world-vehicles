@@ -1,4 +1,5 @@
 NanosWorldVehicles = {}
+Package.Export("NanosWorldVehicles", NanosWorldVehicles)
 
 NanosWorldVehicles.Offroad = Vehicle.Inherit("Offroad")
 NanosWorldVehicles.Offroad.name = "Offroad"
