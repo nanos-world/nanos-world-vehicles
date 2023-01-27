@@ -6,7 +6,7 @@ This is a Package which contains a bunch of vehicles Classes defined using meshe
 ## Usage
 
 ```lua
-NanosWorldVehicles.SUV(Vector(123, 456, 100), Rotator())
+local vehicle = SUV(Vector(123, 456, 100), Rotator())
 ```
 
 
