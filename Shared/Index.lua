@@ -302,3 +302,14 @@ function NanosWorldVehicles.TruckChassis:Constructor(location, rotation)
 
 	self:RecreatePhysics()
 end
+
+NanosWorldVehicles.Boat = VehicleWater.Inherit("Boat")
+NanosWorldVehicles.Boat.name = "Boat"
+NanosWorldVehicles.Boat.image = "assets://nanos-world/Thumbnails/SK_Motorboat.jpg"
+NanosWorldVehicles.Boat.category = "water"
+
+function NanosWorldVehicles.Boat:Constructor(location, rotation)
+	self.Super:Constructor(location or Vector(), (rotation or Rotator()) + Rotator(0, math.random(0, 360), 0), "nanos-world::SK_Motorboat")
+
+	self:SetDoor(0, Vector(0, 0, 0), Vector(-120, 0, 55), Rotator(-10, 0, 0), 200, -100)
+end
