@@ -23,4 +23,4 @@ local vehicle = SUV(Vector(123, 456, 100), Rotator())
 - Van
 - Wagon
 - Sedan
-- Offroad
+- Boat

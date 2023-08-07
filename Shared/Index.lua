@@ -1,7 +1,7 @@
 NanosWorldVehicles = {}
 Package.Export("NanosWorldVehicles", NanosWorldVehicles)
 
-NanosWorldVehicles.Offroad = Vehicle.Inherit("Offroad")
+NanosWorldVehicles.Offroad = VehicleWheeled.Inherit("Offroad")
 NanosWorldVehicles.Offroad.name = "Offroad"
 NanosWorldVehicles.Offroad.image = "assets://nanos-world/Thumbnails/SK_Offroad.jpg"
 NanosWorldVehicles.Offroad.category = "wheeled"
@@ -31,7 +31,7 @@ function NanosWorldVehicles.Offroad:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.CamperVan = Vehicle.Inherit("CamperVan")
+NanosWorldVehicles.CamperVan = VehicleWheeled.Inherit("CamperVan")
 NanosWorldVehicles.CamperVan.name = "CamperVan"
 NanosWorldVehicles.CamperVan.image = "assets://nanos-world/Thumbnails/SK_CamperVan.jpg"
 NanosWorldVehicles.CamperVan.category = "wheeled"
@@ -59,7 +59,7 @@ function NanosWorldVehicles.CamperVan:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.Van = Vehicle.Inherit("Van")
+NanosWorldVehicles.Van = VehicleWheeled.Inherit("Van")
 NanosWorldVehicles.Van.name = "Van"
 NanosWorldVehicles.Van.image = "assets://nanos-world/Thumbnails/SK_Van.jpg"
 NanosWorldVehicles.Van.category = "wheeled"
@@ -85,7 +85,7 @@ function NanosWorldVehicles.Van:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.Wagon = Vehicle.Inherit("Wagon")
+NanosWorldVehicles.Wagon = VehicleWheeled.Inherit("Wagon")
 NanosWorldVehicles.Wagon.name = "Wagon"
 NanosWorldVehicles.Wagon.image = "assets://nanos-world/Thumbnails/SK_Wagon.jpg"
 NanosWorldVehicles.Wagon.category = "wheeled"
@@ -114,7 +114,7 @@ function NanosWorldVehicles.Wagon:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.Sedan = Vehicle.Inherit("Sedan")
+NanosWorldVehicles.Sedan = VehicleWheeled.Inherit("Sedan")
 NanosWorldVehicles.Sedan.name = "Sedan"
 NanosWorldVehicles.Sedan.image = "assets://nanos-world/Thumbnails/SK_Sedan.jpg"
 NanosWorldVehicles.Sedan.category = "wheeled"
@@ -143,7 +143,7 @@ function NanosWorldVehicles.Sedan:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.SUV = Vehicle.Inherit("SUV")
+NanosWorldVehicles.SUV = VehicleWheeled.Inherit("SUV")
 NanosWorldVehicles.SUV.name = "SUV"
 NanosWorldVehicles.SUV.image = "assets://nanos-world/Thumbnails/SK_SUV.jpg"
 NanosWorldVehicles.SUV.category = "wheeled"
@@ -170,7 +170,7 @@ function NanosWorldVehicles.SUV:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.Hatchback = Vehicle.Inherit("Hatchback")
+NanosWorldVehicles.Hatchback = VehicleWheeled.Inherit("Hatchback")
 NanosWorldVehicles.Hatchback.name = "Hatchback"
 NanosWorldVehicles.Hatchback.image = "assets://nanos-world/Thumbnails/SK_Hatchback.jpg"
 NanosWorldVehicles.Hatchback.category = "wheeled"
@@ -196,7 +196,7 @@ function NanosWorldVehicles.Hatchback:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.Pickup = Vehicle.Inherit("Pickup")
+NanosWorldVehicles.Pickup = VehicleWheeled.Inherit("Pickup")
 NanosWorldVehicles.Pickup.name = "Pickup"
 NanosWorldVehicles.Pickup.image = "assets://nanos-world/Thumbnails/SK_Pickup.jpg"
 NanosWorldVehicles.Pickup.category = "wheeled"
@@ -226,7 +226,7 @@ function NanosWorldVehicles.Pickup:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.SportsCar = Vehicle.Inherit("SportsCar")
+NanosWorldVehicles.SportsCar = VehicleWheeled.Inherit("SportsCar")
 NanosWorldVehicles.SportsCar.name = "SportsCar"
 NanosWorldVehicles.SportsCar.image = "assets://nanos-world/Thumbnails/SK_SportsCar.jpg"
 NanosWorldVehicles.SportsCar.category = "wheeled"
@@ -252,7 +252,7 @@ function NanosWorldVehicles.SportsCar:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.TruckBox = Vehicle.Inherit("TruckBox")
+NanosWorldVehicles.TruckBox = VehicleWheeled.Inherit("TruckBox")
 NanosWorldVehicles.TruckBox.name = "Truck Box"
 NanosWorldVehicles.TruckBox.image = "assets://nanos-world/Thumbnails/SK_Truck_Box.jpg"
 NanosWorldVehicles.TruckBox.category = "wheeled"
@@ -278,7 +278,7 @@ function NanosWorldVehicles.TruckBox:Constructor(location, rotation)
 end
 
 
-NanosWorldVehicles.TruckChassis = Vehicle.Inherit("TruckChassis")
+NanosWorldVehicles.TruckChassis = VehicleWheeled.Inherit("TruckChassis")
 NanosWorldVehicles.TruckChassis.name = "Truck Chassis"
 NanosWorldVehicles.TruckChassis.image = "assets://nanos-world/Thumbnails/SK_Truck_Chassis.jpg"
 NanosWorldVehicles.TruckChassis.category = "wheeled"
