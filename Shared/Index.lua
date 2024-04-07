@@ -3,6 +3,7 @@ NanosWorldVehicles = {}
 Package.Export("NanosWorldVehicles", NanosWorldVehicles)
 
 ---@class Offrrad : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): Offrrad
 NanosWorldVehicles.Offroad = VehicleWheeled.Inherit("Offroad")
 NanosWorldVehicles.Offroad.name = "Offroad"
 NanosWorldVehicles.Offroad.image = "assets://nanos-world/Thumbnails/SK_Offroad.jpg"
@@ -33,6 +34,7 @@ function NanosWorldVehicles.Offroad:Constructor(location, rotation)
 end
 
 ---@class CamperVan : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): CamperVan
 NanosWorldVehicles.CamperVan = VehicleWheeled.Inherit("CamperVan")
 NanosWorldVehicles.CamperVan.name = "CamperVan"
 NanosWorldVehicles.CamperVan.image = "assets://nanos-world/Thumbnails/SK_CamperVan.jpg"
@@ -61,6 +63,7 @@ function NanosWorldVehicles.CamperVan:Constructor(location, rotation)
 end
 
 ---@class Van : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): Van
 NanosWorldVehicles.Van = VehicleWheeled.Inherit("Van")
 NanosWorldVehicles.Van.name = "Van"
 NanosWorldVehicles.Van.image = "assets://nanos-world/Thumbnails/SK_Van.jpg"
@@ -87,6 +90,7 @@ function NanosWorldVehicles.Van:Constructor(location, rotation)
 end
 
 ---@class Wagon : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): Wagon
 NanosWorldVehicles.Wagon = VehicleWheeled.Inherit("Wagon")
 NanosWorldVehicles.Wagon.name = "Wagon"
 NanosWorldVehicles.Wagon.image = "assets://nanos-world/Thumbnails/SK_Wagon.jpg"
@@ -116,6 +120,7 @@ function NanosWorldVehicles.Wagon:Constructor(location, rotation)
 end
 
 ---@class Sedan : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): Sedan
 NanosWorldVehicles.Sedan = VehicleWheeled.Inherit("Sedan")
 NanosWorldVehicles.Sedan.name = "Sedan"
 NanosWorldVehicles.Sedan.image = "assets://nanos-world/Thumbnails/SK_Sedan.jpg"
@@ -145,6 +150,7 @@ function NanosWorldVehicles.Sedan:Constructor(location, rotation)
 end
 
 ---@class SUV : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): SUV
 NanosWorldVehicles.SUV = VehicleWheeled.Inherit("SUV")
 NanosWorldVehicles.SUV.name = "SUV"
 NanosWorldVehicles.SUV.image = "assets://nanos-world/Thumbnails/SK_SUV.jpg"
@@ -172,6 +178,7 @@ function NanosWorldVehicles.SUV:Constructor(location, rotation)
 end
 
 ---@class Hatchback : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): Hatchback
 NanosWorldVehicles.Hatchback = VehicleWheeled.Inherit("Hatchback")
 NanosWorldVehicles.Hatchback.name = "Hatchback"
 NanosWorldVehicles.Hatchback.image = "assets://nanos-world/Thumbnails/SK_Hatchback.jpg"
@@ -198,6 +205,7 @@ function NanosWorldVehicles.Hatchback:Constructor(location, rotation)
 end
 
 ---@class Pickup : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): Pickup
 NanosWorldVehicles.Pickup = VehicleWheeled.Inherit("Pickup")
 NanosWorldVehicles.Pickup.name = "Pickup"
 NanosWorldVehicles.Pickup.image = "assets://nanos-world/Thumbnails/SK_Pickup.jpg"
@@ -228,6 +236,7 @@ function NanosWorldVehicles.Pickup:Constructor(location, rotation)
 end
 
 ---@class SportsCar : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): SportsCar
 NanosWorldVehicles.SportsCar = VehicleWheeled.Inherit("SportsCar")
 NanosWorldVehicles.SportsCar.name = "SportsCar"
 NanosWorldVehicles.SportsCar.image = "assets://nanos-world/Thumbnails/SK_SportsCar.jpg"
@@ -254,6 +263,7 @@ function NanosWorldVehicles.SportsCar:Constructor(location, rotation)
 end
 
 ---@class TruckBox : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): TruckBox
 NanosWorldVehicles.TruckBox = VehicleWheeled.Inherit("TruckBox")
 NanosWorldVehicles.TruckBox.name = "Truck Box"
 NanosWorldVehicles.TruckBox.image = "assets://nanos-world/Thumbnails/SK_Truck_Box.jpg"
@@ -280,6 +290,7 @@ function NanosWorldVehicles.TruckBox:Constructor(location, rotation)
 end
 
 ---@class TruckChassis : VehicleWheeled
+---@overload fun(location: Vector, rotation: Rotator): TruckChassis
 NanosWorldVehicles.TruckChassis = VehicleWheeled.Inherit("TruckChassis")
 NanosWorldVehicles.TruckChassis.name = "Truck Chassis"
 NanosWorldVehicles.TruckChassis.image = "assets://nanos-world/Thumbnails/SK_Truck_Chassis.jpg"
@@ -306,6 +317,7 @@ function NanosWorldVehicles.TruckChassis:Constructor(location, rotation)
 end
 
 ---@class Boat : VehicleWater
+---@overload fun(location: Vector, rotation: Rotator): Boat
 NanosWorldVehicles.Boat = VehicleWater.Inherit("Boat")
 NanosWorldVehicles.Boat.name = "Boat"
 NanosWorldVehicles.Boat.image = "assets://nanos-world/Thumbnails/SK_Motorboat.jpg"
