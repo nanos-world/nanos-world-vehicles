@@ -1,6 +1,8 @@
+---@class NanosWorldVehicles
 NanosWorldVehicles = {}
 Package.Export("NanosWorldVehicles", NanosWorldVehicles)
 
+---@class Offrrad : VehicleWheeled
 NanosWorldVehicles.Offroad = VehicleWheeled.Inherit("Offroad")
 NanosWorldVehicles.Offroad.name = "Offroad"
 NanosWorldVehicles.Offroad.image = "assets://nanos-world/Thumbnails/SK_Offroad.jpg"
@@ -30,7 +32,7 @@ function NanosWorldVehicles.Offroad:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class CamperVan : VehicleWheeled
 NanosWorldVehicles.CamperVan = VehicleWheeled.Inherit("CamperVan")
 NanosWorldVehicles.CamperVan.name = "CamperVan"
 NanosWorldVehicles.CamperVan.image = "assets://nanos-world/Thumbnails/SK_CamperVan.jpg"
@@ -58,7 +60,7 @@ function NanosWorldVehicles.CamperVan:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class Van : VehicleWheeled
 NanosWorldVehicles.Van = VehicleWheeled.Inherit("Van")
 NanosWorldVehicles.Van.name = "Van"
 NanosWorldVehicles.Van.image = "assets://nanos-world/Thumbnails/SK_Van.jpg"
@@ -84,7 +86,7 @@ function NanosWorldVehicles.Van:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class Wagon : VehicleWheeled
 NanosWorldVehicles.Wagon = VehicleWheeled.Inherit("Wagon")
 NanosWorldVehicles.Wagon.name = "Wagon"
 NanosWorldVehicles.Wagon.image = "assets://nanos-world/Thumbnails/SK_Wagon.jpg"
@@ -113,7 +115,7 @@ function NanosWorldVehicles.Wagon:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class Sedan : VehicleWheeled
 NanosWorldVehicles.Sedan = VehicleWheeled.Inherit("Sedan")
 NanosWorldVehicles.Sedan.name = "Sedan"
 NanosWorldVehicles.Sedan.image = "assets://nanos-world/Thumbnails/SK_Sedan.jpg"
@@ -142,7 +144,7 @@ function NanosWorldVehicles.Sedan:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class SUV : VehicleWheeled
 NanosWorldVehicles.SUV = VehicleWheeled.Inherit("SUV")
 NanosWorldVehicles.SUV.name = "SUV"
 NanosWorldVehicles.SUV.image = "assets://nanos-world/Thumbnails/SK_SUV.jpg"
@@ -169,7 +171,7 @@ function NanosWorldVehicles.SUV:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class Hatchback : VehicleWheeled
 NanosWorldVehicles.Hatchback = VehicleWheeled.Inherit("Hatchback")
 NanosWorldVehicles.Hatchback.name = "Hatchback"
 NanosWorldVehicles.Hatchback.image = "assets://nanos-world/Thumbnails/SK_Hatchback.jpg"
@@ -195,7 +197,7 @@ function NanosWorldVehicles.Hatchback:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class Pickup : VehicleWheeled
 NanosWorldVehicles.Pickup = VehicleWheeled.Inherit("Pickup")
 NanosWorldVehicles.Pickup.name = "Pickup"
 NanosWorldVehicles.Pickup.image = "assets://nanos-world/Thumbnails/SK_Pickup.jpg"
@@ -225,7 +227,7 @@ function NanosWorldVehicles.Pickup:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class SportsCar : VehicleWheeled
 NanosWorldVehicles.SportsCar = VehicleWheeled.Inherit("SportsCar")
 NanosWorldVehicles.SportsCar.name = "SportsCar"
 NanosWorldVehicles.SportsCar.image = "assets://nanos-world/Thumbnails/SK_SportsCar.jpg"
@@ -251,7 +253,7 @@ function NanosWorldVehicles.SportsCar:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class TruckBox : VehicleWheeled
 NanosWorldVehicles.TruckBox = VehicleWheeled.Inherit("TruckBox")
 NanosWorldVehicles.TruckBox.name = "Truck Box"
 NanosWorldVehicles.TruckBox.image = "assets://nanos-world/Thumbnails/SK_Truck_Box.jpg"
@@ -277,7 +279,7 @@ function NanosWorldVehicles.TruckBox:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
-
+---@class TruckChassis : VehicleWheeled
 NanosWorldVehicles.TruckChassis = VehicleWheeled.Inherit("TruckChassis")
 NanosWorldVehicles.TruckChassis.name = "Truck Chassis"
 NanosWorldVehicles.TruckChassis.image = "assets://nanos-world/Thumbnails/SK_Truck_Chassis.jpg"
@@ -303,6 +305,7 @@ function NanosWorldVehicles.TruckChassis:Constructor(location, rotation)
 	self:RecreatePhysics()
 end
 
+---@class Boat : VehicleWater
 NanosWorldVehicles.Boat = VehicleWater.Inherit("Boat")
 NanosWorldVehicles.Boat.name = "Boat"
 NanosWorldVehicles.Boat.image = "assets://nanos-world/Thumbnails/SK_Motorboat.jpg"
