@@ -188,7 +188,7 @@ function NanosWorldVehicles.Hatchback:Constructor(location, rotation)
 	self.Super:Constructor(location or Vector(), rotation or Rotator(), "nanos-world::SK_Hatchback", CollisionType.Normal, true, false, true, "nanos-world::A_Vehicle_Engine_01")
 
 	self:SetEngineSetup(1200, 6500, 1200, 0.03, 6, 600)
-	self:SetAerodynamicsSetup(1200, 0.3, 500, 200, 0.3)
+	self:SetAerodynamicsSetup(2000, 0.3, 500, 200, 0.3)
 	self:SetSteeringWheelSetup(Vector(0, 27, 133), 18)
 	self:SetHeadlightsSetup(Vector(270, 0, 70))
 	self:SetExplosionSettings(Vector(), {}, { 3 })
