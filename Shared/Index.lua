@@ -3,7 +3,7 @@ NanosWorldVehicles = {}
 Package.Export("NanosWorldVehicles", NanosWorldVehicles)
 
 ---@class Offrrad : VehicleWheeled
----@overload fun(location: Vector, rotation: Rotator): Offrrad
+---@overload fun(location: Vector, rotation: Rotator): Offroad
 NanosWorldVehicles.Offroad = VehicleWheeled.Inherit("Offroad")
 NanosWorldVehicles.Offroad.name = "Offroad"
 NanosWorldVehicles.Offroad.image = "assets://nanos-world/Thumbnails/SK_Offroad.jpg"
@@ -13,17 +13,19 @@ function NanosWorldVehicles.Offroad:Constructor(location, rotation)
 	self.Super:Constructor(location or Vector(), rotation or Rotator(), "nanos-world::SK_Offroad", CollisionType.Normal, true, false, true, "nanos-world::A_Vehicle_Engine_15", "nanos-world::A_Vehicle_Horn_Toyota", "nanos-world::A_Vehicle_Skid", "nanos-world::A_Car_Engine_Start", "nanos-world::A_Vehicle_Door", true, "nanos-world::ABP_Offroad")
 
 	self:AddStaticMeshAttached("body", "nanos-world::SM_Offroad_Body")
-	self:AddStaticMeshAttached("wheel_BR", "nanos-world::SM_Offroad_Tire", "PhysWheel_BR", Vector(), Rotator(0, 180, 0))
-	self:AddStaticMeshAttached("wheel_FR", "nanos-world::SM_Offroad_Tire", "PhysWheel_FR", Vector(), Rotator(0, 180, 0))
-	self:AddStaticMeshAttached("wheel_FL", "nanos-world::SM_Offroad_Tire", "PhysWheel_FL")
-	self:AddStaticMeshAttached("wheel_BL", "nanos-world::SM_Offroad_Tire", "PhysWheel_BL")
+	self:AddStaticMeshAttached("wheel_FL", "nanos-world::SM_Offroad_Tire", "VisWheel_FL")
+	self:AddStaticMeshAttached("wheel_FR", "nanos-world::SM_Offroad_Tire", "VisWheel_FR", Vector(), Rotator(0, 180, 0))
+	self:AddStaticMeshAttached("wheel_BL", "nanos-world::SM_Offroad_Tire", "VisWheel_BL")
+	self:AddStaticMeshAttached("wheel_BR", "nanos-world::SM_Offroad_Tire", "VisWheel_BR", Vector(), Rotator(0, 180, 0))
 
-	self:SetEngineSetup(600, 5000)
-	self:SetAerodynamicsSetup(1500, 0.1, 180, 160, 0.1)
+	self:SetEngineSetup(600, 5000, 900, 0.2, 5, 600)
+	self:SetAerodynamicsSetup(1500, 0.1, 180, 160, 0.1, Vector(0, 0, 75))
 	self:SetSteeringWheelSetup(Vector(0, 30, 130), 15)
+	self:SetTransmissionSetup(2.81, 6000, 2000, 0.2, 0.9)
+	self:SetSteeringSetup(SteeringType.Ackermann)
 
-	self:SetWheel(0, "PhysWheel_FL", 50, 20, 50, Vector(), true, true, false, false, false, 3000, 6000, 750, 1, 4, 20, 20, 100, 100, 20, 20, 0, 0.5, 1)
-	self:SetWheel(1, "PhysWheel_FR", 50, 20, 50, Vector(), true, true, false, false, false, 3000, 6000, 750, 1, 4, 20, 20, 100, 100, 20, 20, 0, 0.5, 1)
+	self:SetWheel(0, "PhysWheel_FL", 50, 20, 40, Vector(), true, true, false, false, false, 3000, 6000, 750, 1, 4, 20, 20, 100, 100, 20, 20, 0, 0.5, 1)
+	self:SetWheel(1, "PhysWheel_FR", 50, 20, 40, Vector(), true, true, false, false, false, 3000, 6000, 750, 1, 4, 20, 20, 100, 100, 20, 20, 0, 0.5, 1)
 	self:SetWheel(2, "PhysWheel_BL", 50, 20,  0, Vector(), true, true, true,  false, false, 3000, 6000, 750, 1, 4, 20, 20, 100, 100, 20, 20, 0, 0.5, 1)
 	self:SetWheel(3, "PhysWheel_BR", 50, 20,  0, Vector(), true, true, true,  false, false, 3000, 6000, 750, 1, 4, 20, 20, 100, 100, 20, 20, 0, 0.5, 1)
 
