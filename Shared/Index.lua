@@ -57,7 +57,7 @@ function NanosWorldVehicles.CamperVan:Constructor(location, rotation)
 
 	self:SetEngineSetup(550, 5200)
 	self:SetAerodynamicsSetup(2700, 0.6, 600, 220, 0.3, Vector(80, 0, 150))
-	self:SetSteeringWheelSetup(Vector(210, -59, 165), 24, Rotator(-35, 0, 0))
+	self:SetSteeringWheelSetup(Vector(219, -59, 165), 23, Rotator(-35, 0, 0))
 	self:SetHeadlightsSetup(Vector(400, 0, 70))
 	self:SetTaillightsSetup(Vector(-350, 0, 70))
 	self:SetExplosionSettings(Vector(), {}, { 6 })
@@ -86,7 +86,7 @@ function NanosWorldVehicles.Van:Constructor(location, rotation)
 
 	self:SetEngineSetup(540, 4400)
 	self:SetAerodynamicsSetup(3200, 0.6, 550, 230, 0.3)
-	self:SetSteeringWheelSetup(Vector(4, 44, 115), 26)
+	self:SetSteeringWheelSetup(Vector(134, -73, 176), 28, Rotator(-45, 0, 0))
 	self:SetHeadlightsSetup(Vector(270, 0, 106))
 	self:SetTaillightsSetup(Vector(-273, 0, 63))
 	self:SetExplosionSettings(Vector(), {}, { 4 })
@@ -96,7 +96,7 @@ function NanosWorldVehicles.Van:Constructor(location, rotation)
 	self:SetWheel(2, "Wheel_Rear_Left", 44, 41, 0, Vector(), true, true, true, false, false, 3000, 6000, 1200, 1, 5, 20, 20, 250, 50, 2, 10, 0, 0.5, 0.7)
 	self:SetWheel(3, "Wheel_Rear_Right", 44, 41, 0, Vector(), true, true, true, false, false, 3000, 6000, 1200, 1, 5, 20, 20, 250, 50, 2, 10, 0, 0.5, 0.7)
 
-	self:SetDoor(0, Vector(70, -120, 140), Vector( 70, -73, 160), Rotator(0, 0, 15), 75, -150)
+	self:SetDoor(0, Vector(70, -120, 140), Vector( 70, -73, 162), Rotator(0, 0, 15), 75, -150)
 
 	self:RecreatePhysics()
 end
