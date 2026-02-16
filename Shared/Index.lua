@@ -17,7 +17,9 @@ function NanosWorldVehicles.Offroad:Constructor(location, rotation)
 	self:AddStaticMeshAttached("wheel_FR", "nanos-world::SM_Offroad_Tire", "VisWheel_FR", Vector(), Rotator(0, 180, 0))
 	self:AddStaticMeshAttached("wheel_BL", "nanos-world::SM_Offroad_Tire", "VisWheel_BL")
 	self:AddStaticMeshAttached("wheel_BR", "nanos-world::SM_Offroad_Tire", "VisWheel_BR", Vector(), Rotator(0, 180, 0))
-	self:AddStaticMeshAttached("steering_wheel", "nanos-world::SM_Steering_Wheel_01", "", Vector(50, -30, 90), Rotator(0, 90, 0))
+	self:AddStaticMeshAttached("steering_wheel", "nanos-world::SM_Steering_Wheel_01", "", Vector(50, -30, 115), Rotator(0, 90, 0))
+
+	self:SetCameraOffset(Vector(0, 0, 100))
 
 	local torque_curve = {
 		[   0.0] = 0.5,
@@ -27,7 +29,7 @@ function NanosWorldVehicles.Offroad:Constructor(location, rotation)
 		[5000.0] = 0.0,
 	}
 
-	self:SetEngineSetup(600, 5000, 900, 0.2, 5, 600, torque_curve)
+	self:SetEngineSetup(750, 7000, 900, 0.2, 5, 600, torque_curve)
 	self:SetAerodynamicsSetup(1500, 0.1, 180, 160, 0.1, Vector(0, 0, 75))
 	self:SetSteeringWheelSetup(Vector(43, -30, 115), 23, Rotator(-5, 0, 0))
 	self:SetTransmissionSetup(2.81, 6000, 2000, 0.2, 0.9)
